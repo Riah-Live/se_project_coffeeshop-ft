@@ -60,7 +60,6 @@
       </header>
 
       <main class="content">
-        <!-- Add your recipes content here -->
         <section class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
@@ -102,8 +101,61 @@
             </div>
           </div>
         </section>
+        <section class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="Name" class="form__label">Name *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="Name"
+                placeholder="Name Surname"
+                required
+              />
+              <label for="Number-of-guests" class="form__label"
+                >Number of guests *</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                min="1"
+                max="8"
+                id="Number-of-guests"
+                placeholder="1-8"
+                required
+              />
+              <label for="Date-time" class="form__label">Date & time *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="Date-time"
+                required
+              />
+              <label for="Email" class="form__label">Your email *</label>
+              <input
+                type="email"
+                class="form__input"
+                id="Email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit" class="form__button">Book a table</button>
+              <label
+                for="Terms-of-use"
+                class="form__label form__label_type_checkbox"
+              >
+                <input
+                  id="Terms-of-use"
+                  type="checkbox"
+                  class="form__checkbox"
+                />
+                I agree with the terms of use
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
-
       <footer class="footer">
         <div class="footer__content">
           <img

@@ -95,7 +95,6 @@
   text-decoration: none;
 }
 
-/* Write your styles here */
 .recipes {
   background-color: #0a2750;
   background-image: url("../images/background_recipes.svg");
@@ -110,6 +109,7 @@
 
 .recipes__title {
   max-width: 580px;
+  display: flex;
   gap: 24px;
   padding-top: 100px;
   padding-left: 80px;
@@ -156,6 +156,107 @@
   justify-content: space-between;
 }
 
+.reservation {
+  padding: 100px 0 215px;
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.reservation__title {
+  text-align: center;
+  margin: 0 0 80px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000;
+}
+
+.reservation__form {
+  max-width: 385px;
+  margin: 0 auto 120px;
+}
+
+.form {
+  max-width: 385px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__input {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #838383;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form__label {
+  display: block;
+  margin-top: 32px;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.form__label:first-child {
+  margin-top: 0;
+}
+
+.form__input::placeholder {
+  color: #838383;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.form__button {
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #1878dc;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+  transition: background-color 0.3s ease;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .footer {
   padding: 60px 80px;
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
@@ -190,7 +291,7 @@
 
 .footer__social-heading {
   margin: 0 0 20px;
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-weight: 700;
 }
 
